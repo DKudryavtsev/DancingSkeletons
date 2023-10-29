@@ -7,9 +7,9 @@
 This program scores the synchronicity of movements between persons in a video file. 
 
 Basic usage:</br>
-<code>python3 skeletons3 in_videofile out_videofile</code>
+<code>python3 skeletons.py in_videofile out_videofile</code>
 
-See also the examples of the [input](https://disk.yandex.ru/i/cSsSEIRz1S5Tww) and [output](https://disk.yandex.ru/i/hL-r_zvcufEH6A) video files. This repository is made as the Skillfactory Compute Vision course work, the presentation is [here](https://disk.yandex.ru/i/s0erA9L6h6PUFA) (MS PowerPoint .pptx) and contains some information on the algorithms used.
+See also the examples of the [input](https://disk.yandex.ru/i/cSsSEIRz1S5Tww) and [output](https://disk.yandex.ru/i/hL-r_zvcufEH6A) video files. This repository is made as the Skillfactory Computer Vision course work, the presentation is [here](https://disk.yandex.ru/i/s0erA9L6h6PUFA) (MS PowerPoint .pptx) and contains some information on the algorithms used.
 
 Behind is the neural network [Keypoint R-CNN with the ResNet-50-FPN backbone](https://pytorch.org/vision/main/models/generated/torchvision.models.detection.keypointrcnn_resnet50_fpn.html) and a specially designed scoring procedure for estimating the similarity score based on affine transformations and calculation of distances between 9 pose keypoints. The score is averaged for all the persons detected in the frame.
 
